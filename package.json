@@ -1,0 +1,12 @@
+{
+  "name": "extension_chrome",
+  "version": "0.1.0",
+  "description": "Extensión de Chrome para capturar y organizar prompts de IA.",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "dev": "node scripts/build.js --watch",
+    "lint": "node scripts/lint.js",
+    "test": "node --test"
+  }
+}
