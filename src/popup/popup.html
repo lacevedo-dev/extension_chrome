@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Prompt Keeper</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Prompt Keeper</h1>
+      <button id="export" type="button">Exportar CSV</button>
+    </header>
+    <section class="search">
+      <label for="search">Buscar</label>
+      <input id="search" type="search" placeholder="Filtra por texto o tag" autocomplete="off" />
+    </section>
+    <section>
+      <ul id="prompt-list" class="prompt-list"></ul>
+      <p id="empty-state" class="empty">Aún no hay prompts guardados.</p>
+    </section>
+    <template id="prompt-item-template">
+      <li class="prompt-item">
+        <p class="prompt-text"></p>
+        <div class="prompt-meta">
+          <span class="prompt-time"></span>
+          <a class="prompt-link" target="_blank" rel="noopener noreferrer">Abrir origen</a>
+        </div>
+        <ul class="prompt-tags"></ul>
+      </li>
+    </template>
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>
